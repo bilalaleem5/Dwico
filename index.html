@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="images/png" href="logo.png">
-
+    <link rel="icon" type="image/png" href="logo.png">
     <title>Dwico</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <h1 class="loading-text">DWICO</h1>
+            <div class="loading-wave"></div>
+            <div class="particle-container"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
     <header>
-        <div class="logo">
+        <div class="logo left-logo">
             <img src="logo.png" alt="DWI Logo" class="logo-img">
         </div>
         <div class="mobile-menu">
@@ -26,17 +36,19 @@
                 <li><a href="#mission">Our Mission</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#ceo-message">CEO Message</a></li>
+                <li><a href="#umbrella">Our Umbrella</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="theme-toggle">
-            <i class="fas fa-moon"></i>
+        <div class="logo right-logo">
+            <img src="c1 (1).png" alt="Secondary Logo" class="logo-img">
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="slider">
-            <div class="slide active" style="background-image: url('1.jpg')">
+            <div class="slide active" style="background-image: url('1.webp')">
                 <div class="slide-content">
                     <h2 class="animate-text">Welcome to Digital World International</h2>
                     <p class="animate-text">Your Trusted Technology Partner</p>
@@ -54,7 +66,7 @@
                     <p class="animate-text">For Corporate and Defense Sectors</p>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('4.jpg')">
+            <div class="slide" style="background-image: url('4.avif')">
                 <div class="slide-content">
                     <h2 class="animate-text">Team Excellence</h2>
                     <p class="animate-text">Building Future Together</p>
@@ -68,6 +80,7 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
         <h2>About Us</h2>
         <div class="content" data-aos="fade-up">
@@ -97,9 +110,10 @@
         </div>
     </section>
 
+    <!-- CEO Message Section -->
     <section id="ceo-message" class="ceo-message">
+        <h2>CEO's Message</h2>
         <div class="container">
-            <h2>CEO's Message</h2>
             <div class="ceo-content" data-aos="fade-up">
                 <div class="ceo-image">
                     <img src="ceo.jpeg" alt="CEO">
@@ -115,7 +129,9 @@
         </div>
     </section>
 
+    <!-- Mission Vision Section -->
     <section id="mission" class="mission-vision">
+        <h2>Our Mission & Vision</h2>
         <div class="container">
             <div class="mission-box" data-aos="fade-right">
                 <div class="icon-container">
@@ -150,6 +166,21 @@
         </div>
     </section>
 
+    <!-- Our Umbrella Section -->
+    <section id="umbrella" class="umbrella">
+        <h2>Our Umbrella</h2>
+
+        <div class="umbrella-container" data-aos="fade-up">
+            <div class="umbrella-logos">
+                <div class="umbrella-logo" data-aos="zoom-in"><img src="c1 (1).png" alt="Bin Saeed 1"></div>
+    
+            </div>
+            <p>We are proud to be part of the Bin Saeed Group of Companies, a conglomerate dedicated to excellence across multiple industries. Together, we strive to deliver innovative solutions and unparalleled services globally.</p>
+
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
     <section class="pillars">
         <h2>Pillars of Concept</h2>
         <div class="pillar-grid">
@@ -176,22 +207,27 @@
         </div>
     </section>
 
+    <!-- Partners Section -->
     <section class="partners">
         <h2>Our Partners</h2>
         <div class="partner-slider">
             <div class="partner-track">
-                <div class="partner-logo"><img src="c1 (1).png" alt="Partner 1"></div>
+                <div class="partner-logo"><img src="c1 (3).png" alt="Partner 1"></div>
                 <div class="partner-logo"><img src="c1 (2).png" alt="Partner 2"></div>
                 <div class="partner-logo"><img src="c1 (3).png" alt="Partner 3"></div>
+                <div class="partner-logo"><img src="c1 (2).png" alt="Partner 2"></div>
 
                 <!-- Duplicate for infinite scroll effect -->
-                <div class="partner-logo"><img src="c1 (1).png" alt="Partner 1"></div>
+                <div class="partner-logo"><img src="c1 (3).png" alt="Partner 1"></div>
                 <div class="partner-logo"><img src="c1 (2).png" alt="Partner 2"></div>
                 <div class="partner-logo"><img src="c1 (3).png" alt="Partner 3"></div>
+                <div class="partner-logo"><img src="c1 (2).png" alt="Partner 2"></div>
+
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -219,10 +255,10 @@
         <div class="footer-bottom">
             <p>© 2024 Digital World International. All rights reserved.</p><br>
             <a href="https://bilalaleem5.github.io/portfolio/"><p>Developed by Bilal Aleem</p></a>
-
         </div>
     </footer>
 
+    <!-- Floating Social Buttons -->
     <div class="floating-social">
         <a href="https://wa.me/+923215002430" class="float-whatsapp" target="_blank">
             <i class="fab fa-whatsapp"></i>
@@ -230,6 +266,9 @@
         <a href="https://m.me/yourpage" class="float-messenger" target="_blank">
             <i class="fab fa-facebook-messenger"></i>
         </a>
+        <div class="theme-toggle float-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
