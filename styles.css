@@ -206,7 +206,7 @@ header {
     cursor: pointer;
     width: 30px;
     height: 20px;
-    position: center;
+    position: relative;
 }
 
 .bar {
