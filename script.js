@@ -7,7 +7,7 @@ AOS.init({
 });
 
 // Loading Screen (Show only on first visit)
-if (!localStorage.getItem('visited')) {
+if (localStorage.getItem('visited')) {
     window.addEventListener('load', () => {
         const loadingScreen = document.querySelector('.loading-screen');
         const particleContainer = document.querySelector('.particle-container');
